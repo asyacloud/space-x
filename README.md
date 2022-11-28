@@ -1,2 +1,5 @@
 # cosmic-wibes
-Ьinimalistic layout project
+Minimalistic layout project
+
+References: [link]
+<a href="https://www.figma.com/file/3v7NoedNxo8IwmktTsQYXa/Space-X?node-id=2%3A2&t=VIQjcfUfuX7PLBLp-0">Figma (Space X)</a>
