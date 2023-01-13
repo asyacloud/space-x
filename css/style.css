@@ -18,9 +18,10 @@ html {
 body {
   position: relative;
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
   font-family: 'Roboto', sans-serif;
   background-color: var(--black);
+  overflow-x: hidden;
 }
 
 a {
