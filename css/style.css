@@ -1,32 +1,30 @@
-:root {
-  --white: #fff;
-  --black: #010001;
-  --grey: #808080;
-  --offset: 20px;
-}
-
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: inherit;
 	box-sizing: inherit;
 }
 
 body {
-  position: relative;
   margin: 0 auto;
   max-width: 1440px;
   font-family: 'Roboto', sans-serif;
-  background-color: var(--black);
+  background-color: #010001;
   overflow-x: hidden;
+}
+
+section {
+  margin-bottom: 20px;
 }
 
 a {
 	text-decoration: none;
-  color: var(--white);
+  color: #fff;
 }
 
 img {
@@ -35,8 +33,8 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  margin-bottom: var(--offset);
-  color: var(--white);
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 ul {
@@ -53,22 +51,33 @@ button {
 .space__header,
 .nav__list,
 .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  min-height: 14px;
 }
 
 .space__header {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 122px;
   padding: 54px 104px 0 104px;
 }
 
 .header__logo {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
+}
+
+.header__nav {
+  margin-right: 20px;
 }
 
 .nav__item:not(:last-child),
 .header__item {
-  margin-right: var(--offset);
+  margin-right: 20px;
 }
 
 .nav__link,
@@ -80,7 +89,7 @@ button {
 }
 
 .header__link {
-  color: var(--grey);
+  color: #808080;
 }
 
 .space__main {
@@ -88,7 +97,23 @@ button {
 }
 
 #falcon_heavy .container {
-  width: 100%;
+  position: relative;
+  max-width: 100%;
+  min-height: 98.75rem;
+  z-index: 1;
+}
+
+#falcon_heavy .container::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 133px;
+  left: -108px;
+  width: 1437px;
+  height: 1006px;
+  background-image: url('../img/earth.png');
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .falcon__title {
@@ -109,32 +134,35 @@ button {
   line-height: 22px;
   text-align: center;
   text-transform: lowercase;
-  color: var(--grey);
+  color: #808080;
 }
 
 #dragon .container {
+  margin-bottom: 20px;
   position: relative;
-  margin-bottom: var(--offset);
   width: 100%;
+  min-height: 34.875rem;
 }
 
-.rocket {
-  margin-bottom: 183px;
-  height: 1718px;
+#dragon .container::after {
+  content: '';
+  position: absolute;
+  top: -95%;
+  right: -5%;
+  display: block;
+  width: 40.25rem;
+  max-width: 100%;
+  height: 107.375rem;
+  background-image: url('../img/rocket-background.png');
+  background-repeat: no-repeat;
+  z-index: 2;
 }
 
 .dragon__title {
-  position: absolute;
-  top: 492px;
   margin-bottom: 45px;
   width: 177px;
   min-height: 68px;
   text-transform: uppercase;
-}
-
-.dragon__table {
-  position: absolute;
-  top: 605px;
 }
 
 .table__row {
@@ -156,7 +184,7 @@ button {
   font-size: 18px;
   line-height: 32px;
   text-align: left;
-  color: var(--white);
+  color: #fff;
 }
 
 .td__slash {
@@ -168,8 +196,8 @@ button {
 }
 
 #update .container {
-  position: absolute;
-  bottom: 503px;
+  margin-bottom: 13rem;
+  min-height: 53.5rem;
 }
 
 .update__title {
@@ -188,14 +216,21 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 29px;
-  color: var(--white);
+  color: #fff;
 }
 
 .footer__container {
   margin-bottom: 131px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -211,7 +246,7 @@ button {
 }
 
 .footer__item:not(:last-child) {
-  margin-right: var(--offset);
+  margin-right: 20px;
 }
 
 .footer__link,
@@ -224,7 +259,7 @@ button {
 
 .footer__descr {
   margin-bottom: 30px;
-  color: var(--grey);
+  color: #808080;
 }
 
 .space__btn {
@@ -234,7 +269,7 @@ button {
   min-height: 60px;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  border: 2px solid var(--white);
+  border: 2px solid #fff;
   border-radius: 6px;
-  color: var(--white);
+  color: #fff;
 }
