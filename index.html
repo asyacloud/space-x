@@ -11,85 +11,87 @@
     <title>Space X</title>
   </head>
   <body>
-    <header class="space__header">
-      <img class="header__logo" src="img/logo.svg" alt="space-x-logo">
-      <nav class="header__nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href = "#">Falcon&nbsp;9</a></li>
-          <li class="nav__item"><a class="nav__link" href = "#falcon_heavy">Falcon Heavy</a></li>
-          <li class="nav__item"><a class="nav__link" href = "#dragon">Dragon</a></li>
-          <li class="nav__item"><a class="nav__link" href = "#updates">Updates</a></li>
+    <header class="header">
+      <div class="container">
+        <img class="header__logo" src="img/logo.svg" alt="space-x-logo">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Falcon&nbsp;9</a></li>
+            <li class="nav__item"><a class="nav__link" href="#heavy">Falcon Heavy</a></li>
+            <li class="nav__item"><a class="nav__link" href="#table">Dragon</a></li>
+            <li class="nav__item"><a class="nav__link" href="#news">Updates</a></li>
+          </ul>
+        </nav>
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#" target="_blank">About</a></li>
+          <li class="header__item"><a class="header__link" href="#" target="_blank">Gallery</a></li>
+          <li class="header__item"><a class="header__link" href="#" target="_blank">Shop</a></li>
         </ul>
-      </nav>
-      <ul class="header__list">
-        <li class="header__item"><a class="header__link" href="#" target = "_blank">About</a></li>
-        <li class="header__item"><a class="header__link" href="#" target = "_blank">Gallery</a></li>
-        <li class="header__item"><a class="header__link" href="#" target = "_blank">Shop</a></li>
-      </ul>
+     </div>
     </header>
-    <main class="space__main">
-    
-      <section id="falcon_heavy">
+
+    <main class="main">
+      <section id="heavy" class="falcon">
         <div class="container">
           <h1 class="falcon__title">Falcon Heavy</h1>
           <p class="falcon__descr">The most powerful operational rocket in&nbsp;the world by&nbsp;a&nbsp;factor of&nbsp;two</p>
         </div>
       </section>
       
-      <section id="dragon">
+      <section id="table" class="dragon">
         <div class="container">
           <h2 class="dragon__title">Falcon Heavy Overview</h2>
           <table class="dragon__table">
-            <tr class="table__row">
-              <th class="table__head">Height</th>
-                <td class="table__body">70&nbsp;m&nbsp;<span class="td__slash">/ 229.6&nbsp;ft</span></td>
+            <tr class="dragon__row">
+              <th class="dragon__head">Height</th>
+                <td class="dragon__body">70&nbsp;m&nbsp;<span class="dragon__slash">/ 229.6&nbsp;ft</span></td>
             </tr>
-            <tr class="table__row">
-              <th class="table__head">Diameter</th>
-              <td class="table__body">12.2&nbsp;m&nbsp;<span class="td__slash">/ 39.9&nbsp;ft</span></td>
+            <tr class="dragon__row">
+              <th class="dragon__head">Diameter</th>
+              <td class="dragon__body">12.2&nbsp;m&nbsp;<span class="dragon__slash">/ 39.9&nbsp;ft</span></td>
             </tr>
-            <tr class="table__row">
-              <th class="table__head">Mass</th>
-              <td class="table__body">1,420,788&nbsp;kg&nbsp;<span class="td__slash">/ 3,125,735&nbsp;lb</span></td>
+            <tr class="dragon__row">
+              <th class="dragon__head">Mass</th>
+              <td class="dragon__body">1,420,788&nbsp;kg&nbsp;<span class="dragon__slash">/ 3,125,735&nbsp;lb</span></td>
             </tr>
-            <tr class="table__row">
-              <th class="table__head">Payload to Leo</th>
-              <td class="table__body">63,800&nbsp;kg&nbsp;<span class="td__slash">/ 140,660&nbsp;lb</span></td>
+            <tr class="dragon__row">
+              <th class="dragon__head">Payload to Leo</th>
+              <td class="dragon__body">63,800&nbsp;kg&nbsp;<span class="dragon__slash">/ 140,660&nbsp;lb</span></td>
             </tr>
-            <tr class="table__row">
-              <th class="table__head">Payload to GTO</th>
-              <td class="table__body">26,700&nbsp;kg&nbsp;<span class="td__slash">/ 58,860&nbsp;lb</span></td>
+            <tr class="dragon__row">
+              <th class="dragon__head">Payload to GTO</th>
+              <td class="dragon__body">26,700&nbsp;kg&nbsp;<span class="dragon__slash">/ 58,860&nbsp;lb</span></td>
             </tr>
-            <tr class="table__row">
-              <th class="table__head">Payload to Mars</th>
-              <td class="table__body">16,800&nbsp;kg&nbsp;<span class="td__slash">/ 37,040&nbsp;lb</span></td>
+            <tr class="dragon__row">
+              <th class="dragon__head">Payload to Mars</th>
+              <td class="dragon__body">16,800&nbsp;kg&nbsp;<span class="dragon__slash">/ 37,040&nbsp;lb</span></td>
             </tr>
           </table>
         </div>
 
-        <section id="update">
+        <section id="news" class="update">
           <div class="container">
             <h2 class="update__title">Unmatched Performance</h2>
             <p class="update__descr">With more than 5&nbsp;million pounds of&nbsp;thrust at&nbsp;liftoff, Falcon Heavy is&nbsp;the most capable rocket flying. By&nbsp;comparison, the liftoff thrust of&nbsp;the Falcon Heavy equals approximately eighteen 747 aircraft at&nbsp;full power. Falcon Heavy can lift the equivalent of&nbsp;a&nbsp;fully loaded 737 jetliner&mdash;complete with passengers, luggage and fuel&mdash;to orbit.</p>
           </div>
         </section>
       </section>
-      
     </main>
-    <footer class="space__footer">
-      <div class="footer__container">
-        <img class="footer-logo" src="img/logo-footer.svg" alt="logo-space-x">
+
+    <footer class="footer">
+      <div class="container">
+        <img class="footer__logo" src="img/logo-footer.svg" alt="logo-space-x">
         <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link" href ="https://twitter.com" target = "_blank">Twitter</a></li>
-          <li class="footer__item"><a class="footer__link" href= "https://www.youtube.com" target="_blank">Youtube</a></li>
-          <li class="footer__item"><a class="footer__link" href= "https://www.instagram.com" target= "_blank">Instagram</a></li>
-          <li class="footer__item"><a class="footer__link" href= "https://www.flickr.com" target = "_blank">Flickr</a></li>
-          <li class="footer__item"><a class="footer__link" href= "https://www.linkedin.com" target= "_blank">LinkedIn</a></li>
-          <li class="footer__item"><a class="footer__link" href= "#" target = "_blank">Privacy</a></li>
-          <li class="footer__item"><a class="footer__link" href= "#" target = "_blank">Policy</a></li>
+          <li class="footer__item"><a class="footer__link" href="https://twitter.com" target="_blank">Twitter</a></li>
+          <li class="footer__item"><a class="footer__link" href="https://www.youtube.com" target="_blank">Youtube</a></li>
+          <li class="footer__item"><a class="footer__link" href="https://www.instagram.com" target="_blank">Instagram</a></li>
+          <li class="footer__item"><a class="footer__link" href="https://www.flickr.com" target ="_blank">Flickr</a></li>
+          <li class="footer__item"><a class="footer__link" href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+          <li class="footer__item"><a class="footer__link" href="#" target="_blank">Privacy</a></li>
+          <li class="footer__item"><a class="footer__link" href="#" target="_blank">Policy</a></li>
         </ul>
-        <p class="footer__descr">For additional questions, contact <a class="mail" href="mailto:ridershare@spacex.com">rideshare@spacex.com</a></p>
-        <button class="space__btn" type="button">Contact us</button>
+        <p class="footer__descr">For additional questions, contact <a class="footer__mail" href="mailto:ridershare@spacex.com">rideshare@spacex.com</a></p>
+        <button class="footer__btn" type="button">Contact us</button>
       </div>
     </footer>
   </body>
