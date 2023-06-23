@@ -27,11 +27,16 @@
 
   .header .container,
   .nav__list {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .nav__list {
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 
   .nav {
@@ -62,7 +67,10 @@
   }
 
   .nav__list {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   .nav .nav__list .nav__item {
@@ -114,7 +122,8 @@
   }
 
   .footer__list {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 60%;
   }
 
@@ -143,8 +152,13 @@
   }
 
   .nav__list {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .main {
@@ -193,12 +207,16 @@
 
   .dragon__row {
     max-width: 200px;
+    min-width: -webkit-fit-content !important;
+    min-width: -moz-fit-content !important;
     min-width: fit-content !important;
   }
 
   .dragon .dragon__head, .dragon .dragon__body {
     font-size: 14px;
     line-height: 100%;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     text-align: right;
   }
@@ -212,6 +230,8 @@
   }
 
   .dragon__row .dragon__head {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
