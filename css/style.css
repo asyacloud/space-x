@@ -95,8 +95,35 @@ button {
   min-height: 46px;
 }
 
+.nav__link:focus,
+.footer__link:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav__link:hover,
+.footer__link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav__link:active {
+  text-shadow: rgb(255, 255, 255) 1px 0 5px;
+}
+
 .header__link {
   color: #808080;
+}
+
+.header__link:focus {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.header__link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.header__link:active,
+.footer__link:active {
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 0 5px;
 }
 
 .main {
